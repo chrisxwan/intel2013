@@ -355,26 +355,8 @@ public class RM6Network {
     {
         System.out.println("RM 8 Training Results: ");
         for (int p = 0; p < inputs.length; p++) {
-            System.out.print("INPUTS: ");
-            for (int x = 0; x < layers[0]; x++) {
-                /*if(x == 0)
-                {                    
-                    System.out.print(inputs[p][x] * max1 + " ");
-                }
-                else if(x == 1)
-                {
-                    System.out.print(inputs[p][x] * max2 + " ");
-                }*/
-            }
-
-            /*System.out.print("EXPECTED: ");
             for (int x = 0; x < layers[2]; x++) {
-                //System.out.print(expectedOutputs[p][x] * max3 + " ");
-            }
-
-            System.out.print("ACTUAL: ");*/
-            for (int x = 0; x < layers[2]; x++) {
-                System.out.print((resultOutputs[p][x] * (max4 - min4) + min4) + " ");
+                System.out.print((resultOutputs[p][x] * (max4 - min4) + min4));
             }
             System.out.println();
         }

@@ -1,6 +1,8 @@
 /**
  * Neuron represents and contains all of the functionalities of
  * an arbitrary neuron in the artificial neural network
+ *
+ * @author Christopher Wan
  */
 import java.util.*;
 

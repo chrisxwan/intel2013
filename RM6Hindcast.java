@@ -204,28 +204,10 @@ public class RM6Hindcast
     {
         System.out.println("Hindcast Results for RM 9.1: ");
         for(int p = 0; p < inputs.length; p++)
-        {
-            /*System.out.print("INPUTS: ");
-            for(int x = 0; x < layers[0]; x++)
-            {
-                if(x == 0)
-                {
-                    System.out.print(inputs[p][x] * max1 + " ");
-                }
-                else if(x == 1)
-                {
-                    System.out.print(inputs[p][x] * max2 + " ");
-                }
-                else if(x == 2)
-                {
-                    System.out.print(inputs[p][x] * max3 + " ");
-                }
-            }
-                
-            System.out.print("EXPECTED: ");*/
+        {   
             for(int x = 0; x < layers[2]; x++)
             {
-                System.out.print((resultOutputs[p][x] * (max4 - min4) + min4) + " ");
+                System.out.print((resultOutputs[p][x] * (max4 - min4) + min4));
             }
             System.out.println();
         }
