@@ -1,4 +1,4 @@
-/**
+/*
  * Connection represents every connection between any two given neuron,
  * and can hold and change the weight between them
  *

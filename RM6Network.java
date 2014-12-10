@@ -1,3 +1,10 @@
+/*
+ * RM6Network is the artificial neural network that learns the salinity
+ * process for River Mile 6 in the Loxahatchee River.
+ * 
+ * @author Christopher Wan
+ * 
+ */
 import java.text.*;
 import java.util.*;
 import java.io.*;

@@ -1,5 +1,5 @@
 
-/**
+/*
  * RM9_1Hindcast uses the weights from the trained artificial neural network
  * for River Mile 9.1 and hindcasts salinity to 1971 using existing input data
  * 
@@ -201,18 +201,10 @@ public class RM9_1Hindcast
     }
     
     public void printResult() throws IOException
-    {
-        /*Scanner dates = new Scanner(new File("dates.txt"));
-        ArrayList<String> allDates = new ArrayList<String>();
-        while(dates.hasNext())
-        {
-            allDates.add(dates.next());
-        }
-        */
+    {     
         System.out.println("Hindcast Results for RM 9.1: ");
         for(int p = 0; p < inputs.length; p++)
         {
-            //System.out.print(allDates.get(p) + ": ");
             for(int x = 0; x < layers[2]; x++)
             {
                 System.out.print((resultOutputs[p][x] * (max4 - min4) + min4) + "psu ");

@@ -1,9 +1,10 @@
 
-/**
- * Write a description of class Hindcast here.
+/*
+ * This class imports the weights learned from the RM6Network class and builds 
+ * the Artificial Neural Network corresponding to those weights. Then, importing existing data
+ * for flow, rainfall and tide, this class hindcasts salinity back to 1971.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Christopher Wan
  */
 import java.text.*;
 import java.util.*;

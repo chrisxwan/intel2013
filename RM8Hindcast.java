@@ -1,9 +1,10 @@
 
-/**
- * Write a description of class Hindcast here.
+/*
+ * This class imports the weights learned from the RM8Network class and builds 
+ * the Artificial Neural Network corresponding to those weights. Then, importing existing data
+ * for flow, rainfall and tide, this class hindcasts salinity back to 1971.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Christopher Wan
  */
 import java.text.*;
 import java.util.*;
@@ -205,24 +206,6 @@ public class RM8Hindcast
         System.out.println("Hindcast Results for RM 9.1: ");
         for(int p = 0; p < inputs.length; p++)
         {
-            /*System.out.print("INPUTS: ");
-            for(int x = 0; x < layers[0]; x++)
-            {
-                if(x == 0)
-                {
-                    System.out.print(inputs[p][x] * max1 + " ");
-                }
-                else if(x == 1)
-                {
-                    System.out.print(inputs[p][x] * max2 + " ");
-                }
-                else if(x == 2)
-                {
-                    System.out.print(inputs[p][x] * max3 + " ");
-                }
-            }
-                
-            System.out.print("EXPECTED: ");*/
             for(int x = 0; x < layers[2]; x++)
             {
                 System.out.print((resultOutputs[p][x] * (max4 - min4) + min4) + " ");
